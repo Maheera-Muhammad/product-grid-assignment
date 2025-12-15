@@ -1,0 +1,56 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* text ka style */
+    background-color: #f4f4f4;      /* page ka color */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+/* Product grid layout */
+.product-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;              /* cards ke beech space */
+    margin-top: 30px;
+}
+/* Product card */
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* shadow */
+    transition: transform 0.3s; /* hover smooth */
+}
+/* Hover effect */
+.product-card:hover {
+    transform: scale(1.05); /* thora zoom */
+}
+/* Product image */
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* Product title */
+.product-title {
+    margin: 10px 0;
+}
+
+/* Product price */
+.product-price {
+    color: green;
+    font-weight: bold;
+}
+/* Buy now button */
+.buy-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover */
+.buy-btn:hover {
+    background-color: gray;
+}
